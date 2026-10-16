@@ -5,8 +5,8 @@ An e-commerce clothing website built for the **Integrative Programming Technolog
 | | |
 |---|---|
 | **Project title** | Strut & Thread |
-| **Student name** | _Your Name Here_ |
-| **Section / Block** | _Your Section Here_ |
+| **Student name** | Amira Lorraine D. Deudpr |
+| **Section / Block** | INF248 MAA |
 | **Website category** | E-Commerce |
 
 ## Project description
