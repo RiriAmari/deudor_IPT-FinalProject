@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sales | Strut &amp; Thread</title>
+  <meta name="description" content="Up to 40% off selected Strut &amp; Thread styles while stocks last.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Archivo+Black&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="sales" data-scope="sale">
+  <div id="site-header"></div>
+
+  <header class="page-banner">
+    <div class="page-banner__inner">
+      <p class="eyebrow">Sale</p>
+      <h1>Up to 40% off</h1>
+      <p>Selected styles at reduced prices, while stocks last.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap shop">
+      <aside class="shop-filters" id="filters" aria-label="Filters"></aside>
+      <section aria-label="Products">
+        <div class="toolbar">
+          <div style="display:flex;align-items:center;gap:.8rem;flex-wrap:wrap">
+            <button class="btn btn--ghost filter-toggle" type="button" id="filterToggle" aria-expanded="false" aria-controls="filters">Filters</button>
+            <p class="result-count" id="resultCount" aria-live="polite"></p>
+          </div>
+          <label class="sort">Sort by
+            <select id="sortSelect">
+              <option value="discount">Biggest discount</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="newest">Newest</option>
+              <option value="featured">Featured</option>
+            </select>
+          </label>
+        </div>
+        <div class="active-note" id="activeNote" hidden></div>
+        <div class="grid" id="grid"></div>
+      </section>
+    </div>
+
+    <div class="wrap">
+      <div class="promo-strip">
+        <div class="promo"><h3>Sale terms</h3><p>Discounts are applied automatically in your cart. Sale items can be returned within 14 days, unworn and with tags.</p></div>
+        <div class="promo"><h3>Final sizes</h3><p>Popular sizes sell out first. Once a size is gone it will not be restocked at the sale price.</p></div>
+        <div class="promo"><h3>Stack the savings</h3><p>Free delivery in Metro Manila on orders over &#8369;2,500, including sale items.</p></div>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>

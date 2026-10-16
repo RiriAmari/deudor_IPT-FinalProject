@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessories | Strut &amp; Thread</title>
+  <meta name="description" content="Bags, hats, shoes, belts, eyewear, watches, jewelry and scarves from Strut &amp; Thread.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Archivo+Black&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="accessories" data-scope="accessories">
+  <div id="site-header"></div>
+
+  <header class="page-banner">
+    <div class="page-banner__inner">
+      <p class="eyebrow">Finishing touches</p>
+      <h1>Accessories</h1>
+      <p>Leather bags, felt hats, sneakers, belts and jewelry. The small things that pull an outfit together.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap shop">
+      <aside class="shop-filters" id="filters" aria-label="Filters"></aside>
+      <section aria-label="Products">
+        <div class="toolbar">
+          <div style="display:flex;align-items:center;gap:.8rem;flex-wrap:wrap">
+            <button class="btn btn--ghost filter-toggle" type="button" id="filterToggle" aria-expanded="false" aria-controls="filters">Filters</button>
+            <p class="result-count" id="resultCount" aria-live="polite"></p>
+          </div>
+          <label class="sort">Sort by
+            <select id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="newest">Newest</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="discount">Biggest discount</option>
+            </select>
+          </label>
+        </div>
+        <div class="active-note" id="activeNote" hidden></div>
+        <div class="grid" id="grid"></div>
+      </section>
+    </div>
+
+    <div class="wrap">
+      <div class="promo-strip">
+        <div class="promo"><h3>Gift ready</h3><p>Every accessory ships in a recycled gift box with a handwritten card on request.</p></div>
+        <div class="promo"><h3>Leather care</h3><p>Keep leather away from direct heat and wipe with a soft dry cloth. Condition twice a year.</p></div>
+        <div class="promo"><h3>Shoe sizes</h3><p>Shoes follow EU sizing, 36 to 42. If you are between sizes, we suggest the larger one.</p></div>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>

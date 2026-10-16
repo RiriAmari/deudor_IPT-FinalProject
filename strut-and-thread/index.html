@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Strut &amp; Thread</title>
+  <meta name="description" content="Strut &amp; Thread is a Manila clothing label for women, men and kids. Shop new arrivals, fall collection and everyday essentials.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Archivo+Black&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div>
+        <h1 id="heroTitle">Fashion Styles</h1>
+        <a class="shop-now" href="shop.html">Shop Now</a>
+      </div>
+    </section>
+
+    <div class="home-layout">
+      <aside class="filter-panel" aria-label="Browse the shop">
+        <div class="filter-panel__head">
+          <h2>Filter</h2>
+          <button class="link-btn" type="button" id="collapseSide">Collapse all</button>
+        </div>
+
+        <form class="side-search" id="sideSearch" role="search">
+          <label class="visually-hidden" for="sideQ">Search the shop</label>
+          <input id="sideQ" type="search" placeholder="Search" autocomplete="off">
+          <button type="submit" aria-label="Search"><span class="icon"><svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span></button>
+        </form>
+
+        <div class="fav-searches">
+          <button type="button" id="favToggle" aria-expanded="false" aria-controls="favList"><span>Favorite searches</span><span aria-hidden="true">&gt;</span></button>
+          <ul id="favList" hidden></ul>
+        </div>
+
+        <div id="sideGroups">
+          <div class="filter-group">
+            <h3>Division</h3>
+            <ul>
+              <li><a href="women.html">Women</a></li>
+              <li><a href="men.html">Men</a></li>
+              <li><a href="shop.html?division=girls">Girls</a></li>
+              <li><a href="shop.html?division=boys">Boys</a></li>
+            </ul>
+          </div>
+          <div class="filter-group">
+            <h3>Top</h3>
+            <ul>
+              <li><a href="shop.html?category=Dresses">Dresses</a></li>
+              <li><a href="shop.html?category=Sweaters">Sweaters</a></li>
+              <li><a href="shop.html?category=Cardigans">Cardigans</a></li>
+              <li><a href="shop.html?category=Tops">Tops</a></li>
+              <li><a href="shop.html?category=T-Shirts">T-Shirts</a></li>
+            </ul>
+          </div>
+          <div class="filter-group">
+            <h3>Bottom</h3>
+            <ul>
+              <li><a href="shop.html?category=Jeans%20%26%20Pants">Jeans &amp; Pants</a></li>
+              <li><a href="shop.html?category=Skirts">Skirts</a></li>
+              <li><a href="shop.html?category=Shorts%20%26%20Skorts">Shorts &amp; Skorts</a></li>
+              <li><a href="shop.html?category=Leggings%20%26%20Tights">Leggings &amp; Tights</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <section class="collections" aria-label="Featured collections">
+        <a class="collection" href="shop.html?tag=favorites">
+          <h2>Buyer&rsquo;s Favorite</h2>
+          <span class="collection__frame"><img src="images/buyers-favorite.jpg" alt="A rack of striped, ruffled and polka-dot tops on wooden hangers" width="526" height="608"></span>
+        </a>
+        <a class="collection" href="shop.html?tag=fall">
+          <h2>Fall Collection</h2>
+          <span class="collection__frame"><img src="images/fall-collection.jpg" alt="A woman in a plaid blazer and wide-brim hat walking through autumn leaves" width="528" height="608"></span>
+        </a>
+        <a class="collection" href="shop.html?tag=essentials">
+          <h2>Essentials</h2>
+          <span class="collection__frame"><img src="images/essentials.jpg" alt="Flat lay of a tan vest, white shirt and brown leather shoes" width="528" height="608"></span>
+        </a>
+      </section>
+    </div>
+
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Fresh in this week</h2>
+        <a class="btn btn--ghost" href="new-arrivals.html">See all new arrivals</a>
+      </div>
+      <div class="grid" id="freshRow"></div>
+
+      <div class="promo-strip">
+        <div class="promo"><h3>Free delivery</h3><p>On orders over &#8369;2,500 within Metro Manila.</p></div>
+        <div class="promo"><h3>30-day returns</h3><p>Changed your mind? Send it back unworn for a full refund.</p></div>
+        <div class="promo"><h3>Made to last</h3><p>Natural fibres, clean finishes and fits that get better with wear.</p></div>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
